@@ -1,0 +1,24 @@
+
+server:
+     port: 8090
+spring:
+
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useSSL=false
+    username: root
+    password: Appu@123
+    
+    
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        
+        
+        driverClassName: com.mysql.cj.jdbc.Driver
+    dialect: org.hibernate.dialect.MySQL8Dialect
